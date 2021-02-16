@@ -8,7 +8,7 @@ const fullTailwindConfig = resolveConfig(tailwindConfig)
 
 try {
   require('electron-reloader')(module)
-} catch {}
+} catch { }
 
 contextMenu({
   showSearchWithGoogle: false,
@@ -36,7 +36,7 @@ function loadVitePage(port) {
 
 function createMainWindow() {
   mainWindow = createWindow('main', {
-    backgroundColor: fullTailwindConfig.theme.colors.primary[800],
+    backgroundColor: fullTailwindConfig.theme.colors.pink[600],
   })
   mainWindow.once('close', () => {
     mainWindow = null

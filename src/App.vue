@@ -7,15 +7,18 @@
         <img class="h-48 ml-5" src="/logo.png" draggable="false" />
       </div>
     </transition>
+    <app-waves></app-waves>
   </div>
 </template>
 
 <script>
 import TopBar from '/~/components/layout/TopBar.vue'
+import AppWaves from '/~/components/effects/AppClouds.vue'
 
 export default {
   name: 'App',
   components: {
+    AppWaves,
     TopBar,
   },
 }
